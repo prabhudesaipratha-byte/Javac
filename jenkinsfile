@@ -6,7 +6,7 @@ stages {
               git branch: 'main', credentialsId: 'd3ba5525-e643-4212-b8f4-e8e200ab6efe', url: 'https://github.com/prabhudesaipratha-byte/Javac.git'
             }
         }
-    stages {
+    stage {
         stage('compile') {
             steps {
                bat javac'hello word'
