@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('compile') {
             steps {
-                echo 'Hello World'
+               bat javac'hello word'
+            }
+        }
+            stage('Run') {
+            steps {
+               bat javac'hello word'
             }
         }
     }
